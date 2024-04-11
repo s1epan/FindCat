@@ -1,0 +1,9 @@
+.main-content {
+   position: relative;
+
+   margin: 10px;
+
+   height: calc(100vh - 20px);
+
+   background-color: coral;
+}

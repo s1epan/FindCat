@@ -1,7 +1,7 @@
 import "./SideContent.css";
 
 function SideContent() {
-  return <></>;
+  return <div className="side-content"></div>;
 }
 
 export default SideContent;
