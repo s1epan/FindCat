@@ -5,8 +5,8 @@ import "./MainContentHeader.css";
 function MainContentHeader(props) {
   return (
     <div className="main-content-header">
-      <Search />
-      <Select breeds={props.breeds} />
+      <Search func={props.func} />
+      <Select breeds={props.breeds} func={props.func} />
     </div>
   );
 }

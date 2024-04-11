@@ -5,7 +5,7 @@ import "./Content.css";
 function Content(props) {
   return (
     <div className="content">
-      <MainContent breeds={props.breeds} />
+      <MainContent breeds={props.breeds} func={props.func} cats={props.cats} />
       <SideContent />
     </div>
   );

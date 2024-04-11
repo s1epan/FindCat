@@ -1,5 +1,7 @@
 .side-content {
    margin: 10px;
 
+   height: calc(100vh - 145px);
+
    background-color: bisque;
 }

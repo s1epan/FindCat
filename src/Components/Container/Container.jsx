@@ -8,7 +8,7 @@ function Container(props) {
   return (
     <div className="container">
       <Header />
-      <Content breeds={props.breeds} />
+      <Content breeds={props.breeds} func={props.func} cats={props.cats} />
     </div>
   );
 }

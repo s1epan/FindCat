@@ -4,6 +4,7 @@ import "./Select.css";
 
 function Select(props) {
   const [value, setValue] = useState("");
+  const [valueSearch, setValueSearch] = useState("");
   const [breeds, setBreeds] = useState("");
 
   useEffect(() => {
@@ -12,7 +13,11 @@ function Select(props) {
 
   return (
     <div className="select">
-      <select value={value} onChange={(e) => setValue(e.target.value)}>
+      <select
+        value={value}
+        onChange={(e) => setValue(e.target.value)}
+        onClick={() => props.func(value)}
+      >
         <option>Choose</option>
         {breeds ? (
           breeds.map((el) => <option key={el.id}>{el.id}</option>)
